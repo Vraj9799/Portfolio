@@ -12,7 +12,7 @@ const LeftSide = () => {
   });
   return (
     <>
-      <div className="w-full flex flex-col gap-10 px-5 xl:px-0">
+      <div className="w-full flex flex-col gap-10 px-5 pt-5 xl:px-0">
         <div className="flex flex-col gap-5">
           <h4 className="text-lg font-normal uppercase">
             WELCOME TO MY PORTFOLIO!
