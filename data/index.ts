@@ -85,4 +85,10 @@ export const workExperiences: WorkExperienceItem[] = [
   },
 ];
 
-export const projectsData: ProjectItem[] = [];
+export const projectsData: ProjectItem[] = [
+  {
+    title: "VS Books",
+    des: "The project is built using the React.js library for the front-end, Express.js as the back-end, and Stripe for payment processing. The website typically includes features like product catalogs, shopping carts, checkout process, and payment process!",
+    githubLink: "https://github.com/Vraj9799/ECommerce-App",
+  },
+];

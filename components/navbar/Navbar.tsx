@@ -2,6 +2,7 @@
 
 import { navLinks } from "@/data";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
@@ -11,7 +12,18 @@ const Navbar = () => {
   return (
     <>
       <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 px-4 md:px-10">
-        <div className="text-2xl">VS</div>
+        <div className="h-100 w-100 rounded-sm">
+          <Image
+            src={"/assets/VRAJ SHAH.png"}
+            alt="Vraj Shah"
+            width={50}
+            height={50}
+            color="white"
+            style={{
+              borderRadius: "50px",
+            }}
+          />
+        </div>
         <div>
           <NavList
             extraClass={`hidden mdl:inline-flex items-center gap-6 lg:gap-10`}
