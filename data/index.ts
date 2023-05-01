@@ -31,11 +31,16 @@ export const navLinks: NavItem[] = [
   },
   {
     _id: 1003,
+    title: "Skills",
+    link: "skills",
+  },
+  {
+    _id: 1004,
     title: "Projects",
     link: "projects",
   },
   {
-    _id: 1004,
+    _id: 1005,
     title: "Contact",
     link: "contact",
   },
@@ -91,4 +96,28 @@ export const projectsData: ProjectItem[] = [
     des: "The project is built using the React.js library for the front-end, Express.js as the back-end, and Stripe for payment processing. The website typically includes features like product catalogs, shopping carts, checkout process, and payment process!",
     githubLink: "https://github.com/Vraj9799/ECommerce-App",
   },
+];
+
+export const skills = {
+  frontend: ["HTML", "CSS", "Javascript", "Typescript", "ReactJS", "NextJS"],
+  backend: [
+    "C#",
+    "ASP.NET Core",
+    "Java",
+    "Spring Boot",
+    "Maven",
+    "SQL",
+    "Hibernate",
+    "Entity Framework Core",
+    "Azure",
+  ],
+};
+
+export const bestSkills = [
+  "JavaScript",
+  "C#",
+  "ASP.NET Core",
+  "Java",
+  "Spring Boot",
+  "SQL",
 ];

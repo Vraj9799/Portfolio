@@ -27,6 +27,7 @@ const Navbar = () => {
         <div>
           <NavList
             extraClass={`hidden mdl:inline-flex items-center gap-6 lg:gap-10`}
+            navItemtext="text-base"
             handleClick={() => setShowMenu(false)}
           />
           <span
@@ -36,7 +37,7 @@ const Navbar = () => {
             <FiMenu />
           </span>
           {showMenu && (
-            <div className="w-[100%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
+            <div className="w-[100%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide mdl:hidden">
               <div className="flex flex-col gap-8 py-2 relative">
                 <div>
                   {/* Logo */}
@@ -51,6 +52,7 @@ const Navbar = () => {
                 </div>
                 <NavList
                   extraClass={`flex justify-center items-center flex-col gap-4`}
+                  navItemtext="text-base text-xl"
                   handleClick={() => setShowMenu(false)}
                 />
                 <span
@@ -70,9 +72,11 @@ const Navbar = () => {
 
 const NavList = ({
   extraClass,
+  navItemtext,
   handleClick,
 }: {
   extraClass: string;
+  navItemtext: string;
   handleClick: () => void;
 }) => {
   return (
@@ -80,7 +84,7 @@ const NavList = ({
       {navLinks.map(({ _id, title, link }) => (
         <li
           key={_id}
-          className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
+          className={`${navItemtext} font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300`}
         >
           <Link
             to={link}
