@@ -21,7 +21,7 @@ const LeftSide = () => {
             Hi, I&apos;m{" "}
             <span className="text-designColor capitalize">Vraj Shah</span>
           </h1>
-          <h2 className="text-4xl font-bold text-white">
+          <h2 className="text-4xl font-bold text-white h-[80px] md:h-auto">
             a <span>{text}</span>
             <Cursor
               cursorBlinking={true}
