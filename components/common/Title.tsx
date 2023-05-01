@@ -1,5 +1,5 @@
 "use client";
-const Title = ({ title, des }: { title: string; des: string }) => {
+const Title = ({ title, des }: { title?: string; des: string }) => {
   return (
     <div className="flex flex-col gap-4 font-titleFont mb-14">
       <h3 className="text-sm uppercase font-light text-designColor tracking-wide">

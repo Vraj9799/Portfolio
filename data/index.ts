@@ -10,6 +10,14 @@ interface WorkExperienceItem {
   location: string;
   description: string[];
 }
+
+interface ProjectItem {
+  title: string;
+  des: string;
+  src?: string;
+  githubLink?: string;
+  websiteLink?: string;
+}
 export const navLinks: NavItem[] = [
   {
     _id: 1001,
@@ -23,6 +31,11 @@ export const navLinks: NavItem[] = [
   },
   {
     _id: 1003,
+    title: "Projects",
+    link: "projects",
+  },
+  {
+    _id: 1004,
     title: "Contact",
     link: "contact",
   },
@@ -71,3 +84,5 @@ export const workExperiences: WorkExperienceItem[] = [
     ],
   },
 ];
+
+export const projectsData: ProjectItem[] = [];
