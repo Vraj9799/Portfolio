@@ -16,12 +16,14 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.2",
+    "framer-motion": "^10.12.4",
     "next": "13.3.2",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "react-scroll": "^1.8.9",
+    "react-simple-typewriter": "^5.0.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
   }
