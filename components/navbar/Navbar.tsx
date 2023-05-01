@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import * as Scroll from "react-scroll";
+import { Link } from "react-scroll";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
@@ -70,17 +70,17 @@ const NavList = ({
           key={_id}
           className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
         >
-          <Scroll.Link
+          <Link
             to={link}
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-150}
             duration={500}
             onClick={() => handleClick()}
           >
             {title}
-          </Scroll.Link>
+          </Link>
         </li>
       ))}
       <li className="border w-fit border-designColor rounded-md px-4 py-2">

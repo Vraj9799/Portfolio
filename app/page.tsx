@@ -1,4 +1,5 @@
 import Banner from "@/components/banner/Banner";
+import Experience from "@/components/experience/Experience";
 import Navbar from "@/components/navbar/Navbar";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
         <Navbar />
         <div className="max-w-screen-xl mx-auto">
           <Banner />
+          <Experience />
         </div>
       </div>
     </>
