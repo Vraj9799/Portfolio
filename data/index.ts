@@ -93,8 +93,27 @@ export const workExperiences: WorkExperienceItem[] = [
 export const projectsData: ProjectItem[] = [
   {
     title: "VS Books",
-    des: "The project is built using the React.js library for the front-end, Express.js as the back-end, and Stripe for payment processing. The website typically includes features like product catalogs, shopping carts, checkout process, and payment process!",
+    des: "The project utilized React.js for the frontend, Express.js for the backend, MongoDB as the database, and Stripe for payment processing. It included features such as product catalogs, filters, shopping carts, checkout, and an admin portal for easy management, resulting in a robust and user-friendly e-commerce website.",
+    src: "/assets/VSBooks.png",
     githubLink: "https://github.com/Vraj9799/ECommerce-App",
+  },
+  {
+    title: "Retail Banking System",
+    des: "A web app was built with 6 microservices and 1 MVC app using Microservice Architecture. API Gateway performance was improved by JWT Authentication and Authorization, while server and client-side validations were implemented. 90% code coverage was achieved using NUnit and Moq for unit testing.",
+    src: "/assets/RetailBankingSystem.jpg",
+  },
+  {
+    title: "QnA",
+    des: "The Q&A web app was developed using ASP.NET MVC, allowing users to ask questions and receive community answers. Categories and authentication were included, and users could upvote/downvote answers. The project resulted in a functional and user-friendly application.",
+    src: "/assets/QA.png",
+    githubLink: "https://github.com/Vraj9799/StackOverflowClone",
+  },
+  {
+    title: "Todo App",
+    des: "A todo app was created using React and Firebase for authentication and storage. Users could create, edit, and delete tasks with real-time updates. The Firebase Authentication service was implemented for security. The end result is an efficient and user-friendly application.",
+    src: "/assets/TodoApp.png",
+    websiteLink: "https://vraj-todo.netlify.app/",
+    githubLink: "https://github.com/VRAJ9799/Todo-App",
   },
 ];
 

@@ -10,15 +10,16 @@ const Contact = () => {
         <div className="flex justify-center items-center text-center">
           <Title title="CONTACT" des="GET IN TOUCH" />
         </div>
-        <div className="flex flex-col gap-4 justify-center items-center text-center rounded-lg shadow-shadowOne p-20 bg-gradient-to-r from-bodyColor to-[#202327] group cursor-pointer transition-colors duration-1000">
+        <div className="flex flex-col gap-4 justify-center items-center text-center rounded-lg shadow-shadowOne p-20 bg-gradient-to-r from-bodyColor to-[#202327] group transition-colors duration-1000">
           <h3 className="text-3xl font-bold text-white">Vraj Shah</h3>
           <p className="text-lg font-normal text-designColor">
             Full Stack Developer
           </p>
           <p className="text-base text-gray-400 tracking-wide">
-            Hello, Thank you for taking the time to view my portfolio. I hope
-            that we have the opportunity to work together to create something
-            truly exceptional!
+            Hello, Thank you for taking time to visit my portfolio! So if
+            you&apos;re looking for a versatile and passionate Full Stack
+            Developer to take your project to the next level, look no further.
+            Let&apos;s build something amazing together&#33;
           </p>
           <p className="text-base text-md text-gray-400 flex items-center gap-2">
             Phone:{" "}

@@ -16,21 +16,22 @@ const ProjectCard = ({
   websiteLink?: string;
 }) => {
   return (
-    <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000">
+    <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors hover:scale-105 duration-500 hover:transition hover:ease-in-out">
       {src && (
         <div className="w-full h-[80%] overflow-hidden rounded-lg">
           <Image
-            className="w-full object-cover group-hover:scale-110 duration-300 cursor-pointer"
+            className="w-full object-cover"
             src={src}
             alt="src"
             height={240}
+            width={240}
           />
         </div>
       )}
-      <div className="w-full mt-5 flex flex-col  gap-6">
+      <div className="w-full mt-5 flex flex-col gap-6">
         <div>
           <div className="flex items-center justify-between">
-            <h3 className="text-base uppercase text-designColor font-normal">
+            <h3 className="text-xl capitalize text-designColor font-normal">
               {title}
             </h3>
             <div className="flex gap-2">

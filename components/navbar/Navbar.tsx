@@ -14,10 +14,10 @@ const Navbar = () => {
       <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 px-4 md:px-10">
         <div className="h-100 w-100 rounded-sm">
           <Image
-            src={"/assets/VRAJ SHAH.png"}
+            src={"/assets/logo.png"}
             alt="Vraj Shah"
-            width={50}
-            height={50}
+            width={150}
+            height={150}
             color="white"
             style={{
               borderRadius: "50px",
