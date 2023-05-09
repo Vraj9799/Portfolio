@@ -58,11 +58,14 @@ const LeftSide = () => {
             </h2>
             <div className="flex flex-wrap gap-4">
               {profiles.map((profile, index) => (
-                <span className="bannerIcon" key={index}>
-                  <a href={profile.href} target="_blank" rel="noreferrer">
-                    {profile.icon}
-                  </a>
-                </span>
+                <a
+                  key={index}
+                  href={profile.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="bannerIcon">{profile.icon}</span>
+                </a>
               ))}
             </div>
           </div>

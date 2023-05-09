@@ -1,7 +1,6 @@
 "use client";
 
 import { navLinks } from "@/data";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
@@ -12,17 +11,23 @@ const Navbar = () => {
   return (
     <>
       <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 px-4 md:px-10">
-        <div className="h-100 w-100 rounded-sm">
-          <Image
-            src={"/assets/logo.png"}
-            alt="Vraj Shah"
-            width={150}
-            height={150}
-            color="white"
-            style={{
-              borderRadius: "50px",
-            }}
-          />
+        <div className="h-100 w-100 cursor-pointer">
+          <Link
+            to={"about"}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            onClick={() => setShowMenu(false)}
+          >
+            <Image
+              src={"/assets/vs-logo.png"}
+              alt="Vraj Shah"
+              width={100}
+              height={100}
+            />
+          </Link>
         </div>
         <div>
           <NavList
@@ -37,27 +42,32 @@ const Navbar = () => {
             <FiMenu />
           </span>
           {showMenu && (
-            <div className="w-[100%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide mdl:hidden">
-              <div className="flex flex-col gap-8 py-2 relative">
-                <div>
-                  {/* Logo */}
-                  <motion.h2
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1, transition: { duration: 0.5 } }}
-                    className="text-xl text-gray-400 mt-2"
-                  >
-                    Hi, I&apos;m{" "}
-                    <span className="text-designColor">Vraj Shah</span>
-                  </motion.h2>
-                </div>
+            <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide mdl:hidden">
+              <div className="flex flex-col gap-8 pt-2 cursor-pointer">
+                <Link
+                  to={"about"}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  onClick={() => setShowMenu(false)}
+                >
+                  <Image
+                    src={"/assets/vs-mobile-logo.png"}
+                    alt="Vraj Shah"
+                    width={150}
+                    height={150}
+                  />
+                </Link>
                 <NavList
-                  extraClass={`flex justify-center items-center flex-col gap-4`}
+                  extraClass={`flex flex-col gap-4`}
                   navItemtext="text-base text-xl"
                   handleClick={() => setShowMenu(false)}
                 />
                 <span
                   onClick={() => setShowMenu(false)}
-                  className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"
+                  className="absolute top-10 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"
                 >
                   <MdClose />
                 </span>
@@ -91,7 +101,7 @@ const NavList = ({
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={-90}
+            offset={-80}
             duration={500}
             onClick={() => handleClick()}
           >
