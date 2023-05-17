@@ -111,7 +111,7 @@ const NavList = ({
       ))}
       <li className="border w-fit border-designColor rounded-md px-4 py-2">
         <a
-          href="https://drive.google.com/file/d/1Vw1sYzWi3f83_pMF6c2zaqbl3UKuo7u-/view?usp=share_link"
+          href={process.env.RESUME_LINK}
           target="_blank"
           rel="noopener noreferrer"
           className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
