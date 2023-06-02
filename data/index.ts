@@ -140,3 +140,5 @@ export const bestSkills = [
   "Spring Boot",
   "SQL",
 ];
+
+export const resumeLink = "https://drive.google.com/file/d/1G_QHn8gNxqOGChV1g2cam8BN_Fj6a2E1/view?usp=sharing";

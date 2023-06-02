@@ -1,6 +1,6 @@
 "use client";
 
-import { navLinks } from "@/data";
+import { navLinks, resumeLink } from "@/data";
 import Image from "next/image";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
@@ -111,7 +111,7 @@ const NavList = ({
       ))}
       <li className="border w-fit border-designColor rounded-md px-4 py-2">
         <a
-          href={process.env.NEXT_PUBLIC_RESUME_URL}
+          href={resumeLink}
           target="_blank"
           rel="noopener noreferrer"
           className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
