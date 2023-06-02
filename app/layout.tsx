@@ -7,8 +7,12 @@ export const metadata = {
     "Full-stack developer with experience in building robust web applications using modern technologies. Skilled in frontend and backend development, and passionate about creating efficient and scalable solutions.",
   referrer: "no-referrer",
   creator: "Vraj Shah",
+  authors: {
+    name: "Vraj Shah",
+  },
   keywords:
     "HTML, CSS, Javascript, Typescript, ReactJs, Next.Js, Java, Spring Boot, C#, ASP.NET CORE, SQL, Microservices",
+  robots: "index, follow",
 };
 
 export default function RootLayout({
@@ -44,6 +48,7 @@ export default function RootLayout({
         />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       </head>
       <body>
         {children}
