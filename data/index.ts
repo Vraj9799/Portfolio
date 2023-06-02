@@ -92,6 +92,13 @@ export const workExperiences: WorkExperienceItem[] = [
 
 export const projectsData: ProjectItem[] = [
   {
+    title: "Blog Application",
+    des: "I developed a comprehensive blog application that enables users to create, comment on, and explore various blogs categorized by topic. Utilizing React for the frontend, Java Spring Boot for the backend, and MySQL for the database, this application ensures seamless user experience and efficient data management. With a user-friendly interface and robust functionality.",
+    src: "/assets/Blog_Application.png",
+    websiteLink: "https://drive.google.com/file/d/16BuZIoShKz3HFJj4sx9DBhP3Fy1_7prO/view?usp=share_link",
+    githubLink: "https://github.com/Vraj9799/Blog-Application"
+  },
+  {
     title: "VS Books",
     des: "The project utilized React.js for the frontend, Express.js for the backend, MongoDB as the database, and Stripe for payment processing. It included features such as product catalogs, filters, shopping carts, checkout, and an admin portal for easy management, resulting in a robust and user-friendly e-commerce website.",
     src: "/assets/VSBooks.png",

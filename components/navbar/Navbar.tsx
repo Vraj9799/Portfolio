@@ -101,7 +101,7 @@ const NavList = ({
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={-80}
+            offset={-96}
             duration={500}
             onClick={() => handleClick()}
           >
