@@ -53,12 +53,10 @@ export const workExperiences: WorkExperienceItem[] = [
     subTitle: "Blackhawk Network - (03/2022 - Present)",
     location: "Bangalore, India",
     description: [
-      "Developed various functionality based on the business requirements.",
-      "Improving performance of various pages by around 80% using best practices like optimizing server calls, decreasing response payload, etc.",
-      "Handling deployment in different environments and preparing release plan for the smooth deployment process.",
-      "Developed an Azure web job for email monitoring in the internal project.",
-      "Worked in developing an QnA application in teams for India SDC .",
-      "Performed Unit testing for various business modules using Nunit.",
+      "As part of my work on performance improvement, I've had great success optimizing server calls through a strategic approach. I focus on segregating and retrieving necessary details first, which in turn decreases response payload size and makes server-side pagination even more effective. Additionally, Redis cache comes in really handy. I use it as often as possible to further improvise the overall efficiency of the system.",
+      "Key contributor in the development of a cutting-edge web application, deployed as a Teams application, that redefined the employee-query process by leveraging Microsoft technology. Utilized Azure Active Directory and Microsoft Graph API for intuitive user data modeling. Additionally, developed and implemented a custom Azure web job that proactively sent reminder emails to leaders for their pending queries.",
+      "Taking full ownership of the entire production deployment, diligently prepared comprehensive release plans and SQL scripts that aided in the seamless integration of new features and functionalities. Effectively collaborated with infrastructure and database teams to ensure a smooth and efficient deployment process.",
+      "Demonstrating expertise in software testing, successfully increased application code coverage to 75% by designing and implementing test cases for services, using best-in-class technologies such as NUnit and Moq. This meticulous approach to testing underscored the quality and reliability of the overall application."
     ],
   },
   {
@@ -67,11 +65,10 @@ export const workExperiences: WorkExperienceItem[] = [
     subTitle: "ThinkBridge - (12/2021 - 03/2022)",
     location: "Pune, India",
     description: [
-      "Developed an Azure Logic App which runs at specific intervals for data sync between SenseHq and sql Server Database.",
-      "Developed an endpoint that helps to notify the candidate's absence in an interview via mail/sms, thereby increasing the interview reschedule rate by 80%.",
-      "Performed Unit testing for various business modules using Xunit and Moq",
-      "Used third-party libraries such as SenseHq, and Xenqu to integrate the features and functionalities.",
-      "Prepare SQL scripts to migrate on-premises SQL database to Azure SQL database.",
+      "Spearheaded the development of an Azure Logic App that efficiently synchronized data at specific intervals between SenseHq and SQL Server DB. This groundbreaking solution significantly enhanced data consistency and streamlined overall operations.",
+      "Designed and implemented a trigger mechanism that proactively notified candidates about their absence in interviews via email or SMS. As a result of this strategic innovation, the interview reschedule rate increased by a remarkable 60%.",
+      "Leveraged the power of cutting-edge third-party libraries, including SenseHq and Xenqu, to seamlessly integrate advanced features and functionalities into the application. This implementation enhanced user experience and delivered an intuitive platform for users.",
+      "Consolidated expertise in database management through the successful migration of SQL DB to Azure SQL DB. Developed and modified essential SQL scripts to efficiently handle schemas, views, functions, stored procedures, and triggers. This pivotal effort ensured a smooth transition."
     ],
   },
   {
@@ -80,12 +77,9 @@ export const workExperiences: WorkExperienceItem[] = [
     subTitle: "Cognizant Technology Solutions - (11/2020 - 12/2021)",
     location: "Pune, India",
     description: [
-      "Worked on the customer requirement and enhanced the code and deployed the same in IIS and services.",
-      "Conducted testing protocols to evaluate the level of mobile responsiveness, download speed, and overall functionality of the website.",
-      "Developed a new console application for archiving the existing data for migration purposes.",
-      "Created a new server setup and deployed the application and other prerequisites.",
-      "Involved in all team-related activities and provided the solution.",
-      "Prepared project-related documents and manage same for future.",
+      "Developed a robust console application that efficiently fetched records from a SQL database and dynamically generated batches of PDFs using specific templates for individual users. Implemented an automated process to transfer these PDFs to a secure SFTP location, significantly streamlining the downloading process.",
+      "Orchestrated the successful implementation of a load balancer on the UAT environment. Took full responsibility for adding and configuring a new server, installing the application on IIS, and ensuring seamless integration with MSMQ. Conducted rigorous end-to-end testing to guarantee the smooth functioning of the entire application.",
+      "Exhibited outstanding problem-solving skills while working closely with clients to understand their requirements. Accomplished a series of enhancements to existing functionalities, effectively resolving critical bugs and delivering fully customized solutions. Meticulously prepared comprehensive documentation to ensure seamless understanding and ease of future project maintenance."
     ],
   },
 ];
@@ -148,4 +142,4 @@ export const bestSkills = [
   "SQL",
 ];
 
-export const resumeLink = "https://drive.google.com/file/d/1G_QHn8gNxqOGChV1g2cam8BN_Fj6a2E1/view?usp=sharing";
+export const resumeLink = process.env.NEXT_PUBLIC_RESUME_LINK;
