@@ -3,8 +3,10 @@
 import { navLinks, resumeLink } from "@/data";
 import Image from "next/image";
 import { useState } from "react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
+import { SiLeetcode } from "react-icons/si";
 import { Link } from "react-scroll";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -65,6 +67,24 @@ const Navbar = () => {
                   navItemtext="text-base text-xl"
                   handleClick={() => setShowMenu(false)}
                 />
+                <div className="flex flex-col gap-4">
+                  <h2 className="text-base uppercase font-titleFont mb-4">
+                    Find me at
+                  </h2>
+                  <div className="flex flex-grow gap-4 ">
+                    {profiles.map((profile) => (
+                      <span className="bannerIcon" key={profile.href}>
+                        <a
+                          href={profile.href}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {profile.icon}
+                        </a>
+                      </span>
+                    ))}
+                  </div>
+                </div>
                 <span
                   onClick={() => setShowMenu(false)}
                   className="absolute top-10 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"
@@ -122,5 +142,21 @@ const NavList = ({
     </ul>
   );
 };
+
+
+const profiles = [
+  {
+    href: "http://www.linkedin.com/in/vrajshah97",
+    icon: <FaLinkedinIn />,
+  },
+  {
+    href: "https://www.leetcode.com/vraj8725",
+    icon: <SiLeetcode />,
+  },
+  {
+    href: "https://www.github.com/vraj9799",
+    icon: <FaGithub />,
+  },
+];
 
 export default Navbar;

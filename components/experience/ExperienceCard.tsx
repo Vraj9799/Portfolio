@@ -33,7 +33,7 @@ const ExperienceCard = ({
               </p>
             </div>
           </div>
-          <ul className="work-experience-desc flex flex-col gap-y-1">
+          <ul className="work-experience-desc flex flex-col gap-y-3">
             {description.map((desc, index) => (
               <li
                 key={index}
