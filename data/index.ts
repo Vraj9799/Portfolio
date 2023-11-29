@@ -53,10 +53,11 @@ export const workExperiences: WorkExperienceItem[] = [
     subTitle: "Blackhawk Network - (03/2022 - Present)",
     location: "Bangalore, India",
     description: [
-      "As part of my work on performance improvement, I've had great success optimizing server calls through a strategic approach. I focus on segregating and retrieving necessary details first, which in turn decreases response payload size and makes server-side pagination even more effective. Additionally, Redis cache comes in really handy. I use it as often as possible to further improvise the overall efficiency of the system.",
-      "Key contributor in the development of a cutting-edge web application, deployed as a Teams application, that redefined the employee-query process by leveraging Microsoft technology. Utilized Azure Active Directory and Microsoft Graph API for intuitive user data modeling. Additionally, developed and implemented a custom Azure web job that proactively sent reminder emails to leaders for their pending queries.",
-      "Taking full ownership of the entire production deployment, diligently prepared comprehensive release plans and SQL scripts that aided in the seamless integration of new features and functionalities. Effectively collaborated with infrastructure and database teams to ensure a smooth and efficient deployment process.",
-      "Demonstrating expertise in software testing, successfully increased application code coverage to 75% by designing and implementing test cases for services, using best-in-class technologies such as NUnit and Moq. This meticulous approach to testing underscored the quality and reliability of the overall application."
+      "Successfully optimized server calls to improve performance by reducing response payload size and utilizing server-side pagination techniques",
+      "Developed a cutting-edge web application using Microsoft technology, resulting in a more efficient employee-query process and leveraging Azure Active Directory and Microsoft Graph API.",
+      "Implemented a custom Azure web job to proactively send reminder emails for pending queries, streamlining communication for leaders.",
+      "Took ownership of production deployment, creating comprehensive release plans and SQL scripts to ensure seamless integration of new features.",
+      "Improved application code coverage to 75% by designing and implementing service test cases, utilizing technologies like NUnit and Moq, highlighting the application’s quality and reliability."
     ],
   },
   {
@@ -65,10 +66,8 @@ export const workExperiences: WorkExperienceItem[] = [
     subTitle: "ThinkBridge - (12/2021 - 03/2022)",
     location: "Pune, India",
     description: [
-      "Spearheaded the development of an Azure Logic App that efficiently synchronized data at specific intervals between SenseHq and SQL Server DB. This groundbreaking solution significantly enhanced data consistency and streamlined overall operations.",
-      "Designed and implemented a trigger mechanism that proactively notified candidates about their absence in interviews via email or SMS. As a result of this strategic innovation, the interview reschedule rate increased by a remarkable 60%.",
-      "Leveraged the power of cutting-edge third-party libraries, including SenseHq and Xenqu, to seamlessly integrate advanced features and functionalities into the application. This implementation enhanced user experience and delivered an intuitive platform for users.",
-      "Consolidated expertise in database management through the successful migration of SQL DB to Azure SQL DB. Developed and modified essential SQL scripts to efficiently handle schemas, views, functions, stored procedures, and triggers. This pivotal effort ensured a smooth transition."
+      "Spearheaded the development of an Azure Logic App that significantly enhanced data consistency and streamlined overall operations, and created a trigger mechanism that increased the interview reschedule rate by 60%",
+      "Consolidated expertise in database management through successfully migrating SQL DB to Azure SQL DB and integrated cutting-edge third-party libraries to enhance the platform&apos;s user experience."
     ],
   },
   {
@@ -86,17 +85,18 @@ export const workExperiences: WorkExperienceItem[] = [
 
 export const projectsData: ProjectItem[] = [
   {
+    title:"Cozy Comfort",
+    des: "Created a fully functional e-commerce web application that allows users to browse and purchase products. Integrated with Stripe, for payment gateway and utilized MongoDB as the data storage solution, ensuring that the website remains reliable and scalable.",
+    src:"/assets/cozy-comfort.png",
+    websiteLink:"https://vrajshah-ecommerce.vercel.app",
+    githubLink:"https://github.com/Vraj9799/Cozy-Comfort"
+  },
+  {
     title: "Blog Application",
     des: "I developed a comprehensive blog application that enables users to create, comment on, and explore various blogs categorized by topic. Utilizing React for the frontend, Java Spring Boot for the backend, and MySQL for the database, this application ensures seamless user experience and efficient data management. With a user-friendly interface and robust functionality.",
     src: "/assets/Blog_Application.png",
     websiteLink: "https://drive.google.com/file/d/16BuZIoShKz3HFJj4sx9DBhP3Fy1_7prO/view?usp=share_link",
     githubLink: "https://github.com/Vraj9799/Blog-Application"
-  },
-  {
-    title: "VS Books",
-    des: "The project utilized React.js for the frontend, Express.js for the backend, MongoDB as the database, and Stripe for payment processing. It included features such as product catalogs, filters, shopping carts, checkout, and an admin portal for easy management, resulting in a robust and user-friendly e-commerce website.",
-    src: "/assets/VSBooks.png",
-    githubLink: "https://github.com/Vraj9799/ECommerce-App",
   },
   {
     title: "Retail Banking System",
