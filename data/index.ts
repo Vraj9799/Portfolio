@@ -48,9 +48,16 @@ export const navLinks: NavItem[] = [
 
 export const workExperiences: WorkExperienceItem[] = [
   {
+    _id: 4,
+    title: 'Engineer',
+    subTitle: 'CareStack - (01/2024 - Present)',
+    location: 'Bangalore, India',
+    description: []
+  },
+  {
     _id: 3,
     title: "Software Engineer",
-    subTitle: "Blackhawk Network - (03/2022 - Present)",
+    subTitle: "Blackhawk Network - (03/2022 - 01/2024)",
     location: "Bangalore, India",
     description: [
       "Successfully optimized server calls to improve performance by reducing response payload size and utilizing server-side pagination techniques",
@@ -85,11 +92,11 @@ export const workExperiences: WorkExperienceItem[] = [
 
 export const projectsData: ProjectItem[] = [
   {
-    title:"Cozy Comfort",
+    title: "Cozy Comfort",
     des: "Created a fully functional e-commerce web application that allows users to browse and purchase products. Integrated with Stripe, for payment gateway and utilized MongoDB as the data storage solution, ensuring that the website remains reliable and scalable.",
-    src:"/assets/cozy-comfort.png",
-    websiteLink:"https://vrajshah-ecommerce.vercel.app",
-    githubLink:"https://github.com/Vraj9799/Cozy-Comfort"
+    src: "/assets/cozy-comfort.png",
+    websiteLink: "https://vrajshah-ecommerce.vercel.app",
+    githubLink: "https://github.com/Vraj9799/Cozy-Comfort"
   },
   {
     title: "Blog Application",
@@ -119,13 +126,13 @@ export const projectsData: ProjectItem[] = [
 ];
 
 export const skills = {
-  frontend: ["HTML", "CSS", "Javascript", "Typescript", "ReactJS", "NextJS"],
+  frontend: ["HTML", "CSS", "Javascript", "Typescript", "ReactJS", "NextJS","Angular"],
   backend: [
     "C#",
     "ASP.NET Core",
     "Java",
     "Spring Boot",
-    "Maven",
+    "Microservices",
     "SQL",
     "Hibernate",
     "Entity Framework Core",
@@ -134,12 +141,7 @@ export const skills = {
 };
 
 export const bestSkills = [
-  "JavaScript",
-  "C#",
-  "ASP.NET Core",
-  "Java",
-  "Spring Boot",
-  "SQL",
+  'C#', 'ASP.NET Core', 'Microservices', 'Angular', 'SQL', 'Azure'
 ];
 
 export const resumeLink = process.env.NEXT_PUBLIC_RESUME_LINK;
