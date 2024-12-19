@@ -52,7 +52,14 @@ export const workExperiences: WorkExperienceItem[] = [
     title: 'Engineer',
     subTitle: 'CareStack - (01/2024 - Present)',
     location: 'Bangalore, India',
-    description: []
+    description: [
+      "Architected and implemented a microservices-based solution using Angular, ASP.NET Core, and EF Core, from scratch, leveraging CQRS architecture to optimize response templates, resulting in a 25% reduction in query response time.",
+      "Deployed and managed services using Docker and Kubernetes, streamlining the CI/CD pipeline, reducing deployment time by 50%, and increasing data processing efficiency by 60% with scheduled jobs.",
+      "Engineered a scalable email webhook system with SendGrid and Azure HTTP Trigger Functions, incorporating it into a dashboard, which improved system design and boosted user engagement and response rates by 25%.", 
+      "Created a feedback automation module for practitioners, facilitating seamless distribution of feedback links across social media, and provided actionable insights, improving feedback collection rates by 35% and enhancing service quality by 20%.",
+      "Leveraged various Azure services to enhance user experience and provide real-time updates, including Azure SignalR Service for real-time web functionality and Azure App Service for scalable web applications, improving user engagement by 30%.",
+      "Collaborated closely with the product owner, project manager, and stakeholders to accurately translate project requirements into features and functionality, leading to a 95% satisfaction rate among stakeholders."
+    ]
   },
   {
     _id: 3,
@@ -60,7 +67,8 @@ export const workExperiences: WorkExperienceItem[] = [
     subTitle: "Blackhawk Network - (03/2022 - 01/2024)",
     location: "Bangalore, India",
     description: [
-      "Successfully optimized server calls to improve performance by reducing response payload size and utilizing server-side pagination techniques",
+      "Orchestrated the development and configuration of a distinct application instance tailored to diverse user demographics, focusing on specific products and emphasizing digital e-gift adoption over traditional gift cards. This strategic implementation led to a notable 30% upsurge in overall revenue.",
+      "Successfully optimized server calls to improve performance by reducing response payload size and utilizing server-side pagination techniques.",
       "Developed a cutting-edge web application using Microsoft technology, resulting in a more efficient employee-query process and leveraging Azure Active Directory and Microsoft Graph API.",
       "Implemented a custom Azure web job to proactively send reminder emails for pending queries, streamlining communication for leaders.",
       "Took ownership of production deployment, creating comprehensive release plans and SQL scripts to ensure seamless integration of new features.",
