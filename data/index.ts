@@ -48,9 +48,16 @@ export const navLinks: NavItem[] = [
 
 export const workExperiences: WorkExperienceItem[] = [
   {
+    _id: 5,
+    title: 'Senior Software Engineer',
+    subTitle: 'Visa - (02/2025 - Present)',
+    location: 'Bangalore, India',
+    description: [],
+  },
+  {
     _id: 4,
     title: 'Engineer',
-    subTitle: 'CareStack - (01/2024 - Present)',
+    subTitle: 'CareStack - (01/2024 - 02/2025)',
     location: 'Bangalore, India',
     description: [
       "Architected and implemented a microservices-based solution using Angular, ASP.NET Core, and EF Core, from scratch, leveraging CQRS architecture to optimize response templates, resulting in a 25% reduction in query response time.",
@@ -145,6 +152,8 @@ export const skills = {
     "Hibernate",
     "Entity Framework Core",
     "Azure",
+    "Docker",
+    "Kubernetes"
   ],
 };
 

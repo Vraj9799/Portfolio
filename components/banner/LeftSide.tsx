@@ -27,7 +27,7 @@ const LeftSide = () => {
             />
           </h2>
           <p className="text-base font-bodyFont leading-6 tracking-wide text-justify">
-            I&apos;m a Software Developer with a passion for creating innovative
+            I&apos;m a Senior Software Developer with a passion for creating innovative
             and functional web applications that make a difference in
             people&apos;s lives. My journey as a developer began when I
             discovered the power of technology to transform ideas into reality,
